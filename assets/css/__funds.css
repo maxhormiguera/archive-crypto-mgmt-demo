@@ -1,0 +1,52 @@
+
+/*====== TABLE OF CONTENTS ======*/
+  /*
+
+  */
+
+
+
+
+/*==== Funds Content*/
+.funds h2, .orders h2 {
+  font-size: 1.125em;
+  font-weight: 500;
+  color: #3c8bb9;
+}
+
+.funds .data-filters {  margin-top: 1em;  }
+.funds .data-filters label {
+  font-size: 0.75em;
+  line-height: 1.4;
+}
+.funds table td, .funds table th {  font-weight: 500; }
+.funds table th, .orders table th {
+  font-size: 0.9375em;
+  color: #3c8bb9;
+}
+
+.funds .btn-transaction:first-child { margin-right: 10px; }
+
+
+.row-data { padding: 25px 100px 25px 25px;  }
+.row-data > div { padding: 5px 0; }
+.row-data h2 { font-weight: bold;  }
+.row-data .data-head {  padding: 10px 0;  }
+.row-data .export {  font-size: 0.75em;  color: #676767; }
+.row-data .export .ico {  height: 31px; width: 24px;  margin-left: 10px;  }
+  .row-data .history {  padding: 85px 20px;  }
+  .row-data td.noresults     {  padding: 20px 0; }
+  .row-data .noresults img   {  opacity: 0.4;  }
+  .row-data .noresults span  {  line-height: 8;    margin-left: 1em; color: #676767; }
+
+.data-filters { padding: 0px 0 10px;  }
+.data-filters > div:not(:last-child) {  margin-right: 10px; }
+.data-filters select, .data-filters input[type="date"] {
+  color: #629dc3;
+  border-radius: 5px;
+  padding: 5px 8px;
+  transform: translateY(1px);
+  font-family: Raleway;
+  font-size: 0.6875em;
+  border: 1px solid #a9a9a9;
+}

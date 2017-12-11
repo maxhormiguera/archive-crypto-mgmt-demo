@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta http-equiv="Content-Type" content="text/html;">
+      <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+
+      <link rel="stylesheet" type="text/css" href="../../assets/css/app.css">
+  </head>
+  <body class="app funds">
+    <!-- Side panel Start -->
+    <div class="side">
+      <div class="logo-container">
+        <a class="logo all-center"></a>
+      </div>
+      <ul class="navigation">
+        <li><a href="dashboard.html"><i class="ico ico-menu ico-dashboard" aria-hidden="true"></i>DASHBOARD</a></li>
+        <li><a href="account.html"><i class="ico ico-menu ico-account" aria-hidden="true"></i>ACCOUNT</a></li>
+        <li><a href="trade.html"><i class="ico ico-menu ico-trade" aria-hidden="true"></i>TRADE</a></li>
+        <li><a href="support.html"><i class="ico ico-menu ico-support" aria-hidden="true"></i>SUPPORT</a></li>
+        <li><a href="funds.html" class="active"><i class="ico ico-menu ico-funds" aria-hidden="true"></i>FUNDS</a></li>
+        <li><a href="orders.html"><i class="ico ico-menu ico-orders" aria-hidden="true"></i>ORDERS</a></li>
+      </ul>
+    </div>
+    <!-- Side navigation End -->
+    <header>
+      <div class="row header clear">
+        <div class="clear">
+          <h1 class="left">FUNDS</h1>
+          <div class="search right">
+            <span>Search</span>
+            <button class="btn-min-search"><span class="ico ico-search"></span></button>
+            <input type="text" class="search">
+          </div>
+        </div>
+        <hr>
+        <ul class="sublinks left">
+          <li class="active">> <a href="funds-transactions.html">DEPOSITS & WITHDRAWALS</a></li>
+          <li>> <a href="funds-history.html">HISTORY</a></li>
+        </ul>
+        <span class="update right">NEW UPDATE AVAILABLE <span class="ico ico-download"></span></span>
+      </div>
+    </header>
+    <main class="content">
+      <div class="container container-white">
+        <div class="row">
+          <h2>DEPOSITS & WITHDRAWALS</h2>
+          <div class="left-right-clear">
+            <div class="data-filters">
+              <input type="text" />
+              <label>
+                <input type="checkbox" />
+                <span class="--checkbox"></span>
+                Hide 0 Balances
+              </label>
+            </div>
+            <div>
+              <p>Estimated Value： 0.00000000 BTC / $0.00</p>
+              <p>24h Withdrawal Limit：2BTC In Use：0BTC</p>
+            </div>
+          </div>
+        </div>
+        <div class="row row-data">
+          <table class="transactions-table">
+            <thead>
+              <tr>
+                <th>Coin</th>
+                <th>Name</th>
+                <th>Total Balance</th>
+                <th>Available Balance</th>
+                <th>In Order</th>
+                <th>BTC Value</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>ADA</td>
+                <td>Cardano</td>
+                <td>0.00000000</td>
+                <td>0.00000000</td>
+                <td>0.00000000</td>
+                <td>0.00000000</td>
+                <td><button class="btn btn-transaction">Deposit</button><button class="btn btn-transaction">Withdrawal</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>      <!-- end container -->
+
+    </main>
+
+
+  </body>
+  <script>
+    var user = {
+      img : '../../assets/images/amine_avatar.png',
+      email : 'amine@cryptalone.io',
+      login_history : [],
+      paymethod : 'BNB'
+    }
+
+  </script>
+
+</html>

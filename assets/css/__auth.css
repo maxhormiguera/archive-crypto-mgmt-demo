@@ -1,0 +1,179 @@
+
+/*====== TABLE OF CONTENTS ======*/
+  /*
+  * Dashboard Content
+      columns
+      overview
+        graph
+        tabs
+      wallet
+      fillbar
+      fillbar legend
+      table
+      my Advisor
+        quicktips
+  */
+
+
+
+
+/*==== Dashboard Content*/
+/*main stuff*/
+.auth { background-color: transparent;  }
+  /*containers col*/
+  .auth .container-auth {
+    padding-top: 150px;
+    text-align: center;
+  }
+  .auth .row {
+    overflow-x: hidden;
+  }
+
+  .auth .col-left {
+    position: relative;
+    float: left;
+    width: 50%;
+    padding: 25px 0;
+    text-align: left;
+  }
+  .auth .col-right {
+    position: relative;
+    float: right;
+    padding: 45px 0 50px 10%;
+    width: 40%;
+    text-align: left;
+    z-index: 1;
+  }
+  .auth .col-right:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 140%;
+    height: 100%;
+    opacity: 0.26;
+    background: #9a26e8;
+    border-radius: 5px;
+    z-index: -1;
+  }
+  .auth .row-center {
+    position: relative;
+    display: inline-block;
+    width: 40%;
+    margin: 0 auto;
+    padding: 45px 45px 50px;
+    z-index: 1;
+  }
+  .auth .row-center:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 100%;
+    opacity: 0.26;
+    background: #9a26e8;
+    border-radius: 5px;
+    z-index: -1;
+  }
+
+  /*text*/
+  .auth h2 {
+    font-size: 1.3125em;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .auth h3 {  font-size: 1.5em;  }
+  .auth .col-left p { line-height: 4; }
+  .ico-privacy, .ico-safe {
+    width: 3em;
+    height: 3em;
+    margin-right: 1em;
+  }
+  ul.more-links li {
+    color: #55565a;
+    font-size: 0.8125em;
+    position: relative;
+  }
+  ul.more-links li.list-head {
+    color: #000;
+    font-weight: bold;
+    font-size: 0.75em;
+  }
+  li.list-head:before {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 1em;
+    border-bottom: 2px solid #bf17a0;
+  }
+
+
+  /*form*/
+  .form-row {
+    position: relative;
+    margin-bottom: 10px;
+  }
+  .box-login input[type="text"] {
+    padding: 8px 50px;
+  }
+  .col-right input[type="text"] {
+    padding: 8px 25px;
+  }
+  input[type="text"]::placeholder {
+    font-size: 1.125em;
+    font-family: Raleway;
+  }
+  input[type='text'].col-half {
+    width: 48%;
+    width: calc(50% - 6px);
+  }
+  button.col-35, button.col-65 {
+    background: transparent;
+    border: 1px solid #c1c1c1;
+  }
+  button.col-35 {    width: 30%;    width: calc(35% - 6px)  }
+  button.col-65 {    width: 60%;    width: calc(65% - 6px)  }
+  button.col-35 { margin-right: 12px; }
+  span.show_pw {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-100%, -50%);
+    cursor: pointer;
+    color: inherit;
+  }
+  a.send2fa, a.disable2fa {
+    font-size: 0.9375em;
+  }
+  a.send2fa { color: #ffffff; }
+  a.disable2fa { color: #ff8282; }
+
+
+  /*container links*/
+  .container-links {
+    background: #f1f2f6;
+    padding: 40px 10% 60px;
+  }
+  .container-links ul {
+    width: 33.33%;
+    width: calc(100% / 3);
+    display: block;
+    float: left;
+  }
+  .container-links li {
+    position: relative;
+    line-height: 2;
+    font-size: 0.875em;
+    color: #55565a;
+  }
+  .container-links li.list-head {
+    margin-bottom: 44px;
+    line-height: 1.4;
+    font-weight: bold;
+    font-size: 0.75em;
+    color: #000;
+  }
+  .container-links ul:not(:last-of-type) {  width: 45%;  }
+  .container-links ul:last-of-type {  width: 10%; }

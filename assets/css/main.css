@@ -1,0 +1,65 @@
+@import url("__global.css");
+@import url("../fonts/css/fonts.css");
+@import url("__common.css");
+
+@import url("__auth.css");
+@import url("__home.css");
+
+
+
+/*==== header*/
+
+/*==== header*/
+.header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+}
+header .logo {
+  height: 41px;
+  width: 221px;
+  background: url(../../assets/images/cryptaldash-white-headerlogo.png) no-repeat center;
+  background-size: contain;
+}
+.header-menu.right {
+  position: relative;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.header-menu-list a {  font-size: 0.9375em;  color: #b8bbc4;  }
+.header-menu-list a.active, .header-menu-list a:hover {
+  border-bottom: 2px solid #22ddbc;
+  color: #ffffff;
+}
+
+/*==== footer*/
+footer .logo {
+ width: 164px;
+ height: 30px;
+ background: url(../../assets/images/footer_logo.png) no-repeat center;
+ background-size: contain;
+}
+
+
+/*==== main*/
+.container {
+  padding: 50px 0 50px;
+  min-height: 100vh;
+  color: #4c4c4c;
+}
+.container-dark {  background: #4c4c4c;  color: #ffffff;  }
+.container-theme {
+  background: url(../../assets/images/bg.png) no-repeat top left;
+  background-size: cover;
+  color: #ffffff;
+}
+.container-theme-grad {
+  background-color: #66cbe5; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left,#714197,#66cbe5); /*Safari 5.1-6*/
+  background: -o-linear-gradient(right,#714197,#66cbe5); /*Opera 11.1-12*/
+  background: -moz-linear-gradient(right,#714197,#66cbe5); /*Fx 3.6-15*/
+  background: linear-gradient(to right, #714197,#66cbe5); /*Standard*/
+  color: #ffffff;
+}

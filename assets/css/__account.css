@@ -1,0 +1,71 @@
+
+/*====== TABLE OF CONTENTS ======*/
+  /*
+
+  */
+
+
+
+
+/*==== Account Content*/
+.account h3 {  color: #2bcacb;  }
+
+  .profile-overview {  width: 50%  }
+  .profile-overview span.--checkbox-switch  {     margin-left: 10px;  }
+
+.row-settings {
+  padding: 0 10%;
+}
+  .row-settings .col {    padding: 20px;  }
+
+  .row-settings .col-right {
+    border: 1px solid;
+    border-radius: 5px;
+  }
+
+
+
+  /* infogroups*/
+  .infogroup {
+    width: 80%;
+    float: right;
+    padding-left: 10px;
+  }
+  .infogroup p.label {
+    font-size: 0.9375em;
+    color: #2bcacb;
+  }
+  .infogroup p.desc {
+    font-size: 0.75em;
+  }
+  .infogroup-ico {
+    width: 20%;
+    text-align: center;
+  }
+  .account #user-avatar {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+  }
+
+
+  /*row-userhistory  tables*/
+  .row-userhistory table {  position: relative;      z-index: 1;  }
+  .row-userhistory thead { background: #3490ac;  }
+  .row-userhistory th:first-child { border-top-left-radius: 5px;  }
+  .row-userhistory th:last-child { border-top-right-radius: 5px;  }
+  .row-userhistory tbody:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 1px;
+    right: 0px;
+    bottom: 0;
+    background: transparent;
+    opacity: 0.5;
+    z-index: -1;
+    border: 1px solid;
+    border-radius: 5px;
+  }
+  .row-userhistory td.noresults span  {    line-height: 6;  }

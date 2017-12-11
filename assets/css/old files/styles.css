@@ -1,0 +1,45 @@
+@import url("global.css");
+@import url("../fonts/css/fonts.css");
+@import url("common.css");
+@import url("app.css");
+@import url("dashboard.css");
+@import url("tradepage.css");
+@import url("account.css");
+@import url("support.css");
+@import url("funds.css");
+
+/*====== TABLE OF CONTENTS ======*/
+  /* COMMON
+      * Base / Tags
+          layout (header, main footer)
+          text tags
+          input
+              input text
+              input radio
+              form elements
+      * Reusable Classes
+          header
+              logo
+              header-menu
+          main
+              wrapper
+              box elements
+              rows
+          footer
+      * Icons
+      * Utility Classes
+          clearfix
+          center object (all, vertical)
+          text ruling
+
+
+  */
+
+
+/* temp variable */
+.fillbar .btc { width: 24%; }
+.fillbar .xdg { width: 16%; }
+.fillbar .eth { width: 40%; }
+.fillbar .xrp { width: 20%; }
+
+.util .fillbar > div { width: 30%;  }

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta http-equiv="Content-Type" content="text/html;">
+      <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+
+      <link rel="stylesheet" type="text/css" href="../../assets/css/app.css">
+  </head>
+  <body class="app orders">
+    <!-- Side panel Start -->
+    <div class="side">
+      <div class="logo-container">
+        <a class="logo all-center"></a>
+      </div>
+      <ul class="navigation">
+        <li><a href="dashboard.html"><i class="ico ico-menu ico-dashboard" aria-hidden="true"></i>DASHBOARD</a></li>
+        <li><a href="account.html"><i class="ico ico-menu ico-account" aria-hidden="true"></i>ACCOUNT</a></li>
+        <li><a href="trade.html"><i class="ico ico-menu ico-trade" aria-hidden="true"></i>TRADE</a></li>
+        <li><a href="support.html"><i class="ico ico-menu ico-support" aria-hidden="true"></i>SUPPORT</a></li>
+        <li><a href="funds-transactions.html" class="active"><i class="ico ico-menu ico-funds" aria-hidden="true"></i>FUNDS</a></li>
+        <li><a href="orders.html"><i class="ico ico-menu ico-orders" aria-hidden="true"></i>ORDERS</a></li>
+      </ul>
+    </div>
+    <!-- Side navigation End -->
+    <header>
+      <div class="row header clear">
+        <div class="clear">
+          <h1 class="left">FUNDS</h1>
+          <div class="search right">
+            <span>Search</span>
+            <button class="btn-min-search"><span class="ico ico-search"></span></button>
+            <input type="text" class="search">
+          </div>
+        </div>
+        <hr>      
+        <span class="update right">NEW UPDATE AVAILABLE <span class="ico ico-download"></span></span>
+      </div>
+    </header>
+    <main class="content">
+      <div class="container container-white">
+        <div class="row">
+          <h2>HISTORY</h2>
+        </div>
+        <div class="row row-data">
+          <h2>OPEN ORDERS</h2>
+          <table class="open-orders">
+            <thead>
+              <tr>
+                <td>Date</td>
+                <td>Pair</td>
+                <td>Type</td>
+                <td>Price</td>
+                <td>Amount</td>
+                <td>Total</td>
+                <td>Action</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td colspan="7" class="noresults">
+                  <div class="all-left-clear">
+                    <img src="../../assets/images/icons/ico-noresults.png" alt=""/>
+                    <span>You have no distribution history.</span>
+                  </div>
+
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+
+        </div>        <!-- end row-data -->
+        <div class="row row-data">
+          <div class="data-head left-right-clear">
+            <h2>ORDER HISTORY</h2>
+            <a class="export">Export Complete Order History<span class="ico ico-export"></span></p>
+          </div>
+          <div class="left-right-clear">
+            <div class="data-filters all-left-clear">
+              <div>Date <input type="date" /> - <input type="date" /></div>
+              <div>
+                Pair: <select>  <option>BTC</option><option>ETH</option><option>XRP</option>  </select> /
+                <select>  <option>All</option><option>USD</option><option>EUR</option>  </select>
+              </div>
+              <div>
+                <select>  <option>All</option><option>Open</option><option>Completed</option>  </select>
+                <button class="btn btn-search">Search</button>
+                <button class="btn btn-reset">Reset</button>
+              </div>
+            </div>
+            <label>
+              <input type="checkbox" />
+              <span class="--checkbox"></span>
+              Hide all cancelled
+            </label>
+          </div>
+          <table class="order-history">
+            <thead>
+              <tr>
+                <td>Date</td>
+                <td>Pair</td>
+                <td>Type</td>
+                <td>Order Price</td>
+                <td>Avg Trading Price</td>
+                <td>Filled</td>
+                <td>Total</td>
+                <td>Status</td>
+                <td>Operation</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td colspan="9" class="noresults">
+                  <div class="all-left-clear">
+                    <img src="../../assets/images/icons/ico-noresults.png" alt=""/>
+                    <span>You have no distribution history.</span>
+                  </div>
+
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>        <!-- end row-data -->
+        <div class="row row-data">
+          <div class="data-head left-right-clear">
+            <h2>TRADE HISTORY</h2>
+            <a class="export">Export Complete Order History<span class="ico ico-export"></span></p>
+          </div>
+          <div class="left-right-clear">
+            <div class="data-filters all-left-clear">
+              <div>Date <input type="date" /> - <input type="date" /></div>
+              <div>
+                Pair: <select>  <option>BTC</option><option>ETH</option><option>XRP</option>  </select> /
+                <select>  <option>All</option><option>USD</option><option>EUR</option>  </select>
+              </div>
+              <div>
+                <select>  <option>All</option><option>Open</option><option>Completed</option>  </select>
+                <button class="btn btn-search">Search</button>
+                <button class="btn btn-reset">Reset</button>
+              </div>
+            </div>
+            <label>
+              <input type="checkbox" />
+              <span class="--checkbox"></span>
+              Hide all cancelled
+            </label>
+          </div>
+          <table class="order-history">
+            <thead>
+              <tr>
+                <td>Date</td>
+                <td>Pair</td>
+                <td>Type</td>
+                <td>Price</td>
+                <td>Filled</td>
+                <td>Fee</td>
+                <td>Total</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td colspan="7" class="noresults">
+                  <div class="all-left-clear">
+                    <img src="../../assets/images/icons/ico-noresults.png" alt=""/>
+                    <span>You have no distribution history.</span>
+                  </div>
+
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>        <!-- end row-data -->
+      </div>      <!-- end container -->
+
+    </main>
+
+
+  </body>
+
+</html>

@@ -1,0 +1,121 @@
+
+/*====== TABLE OF CONTENTS ======*/
+  /*
+
+  */
+
+
+
+
+/*==== TradePage Content*/
+  /*order-book*/
+  div.order-book {
+    float: left;
+    width: 33.33%;
+    padding: 30px;
+  }
+    .order-book .row-exchange { position: relative; width: 60%; margin: 10px auto;  }
+    .order-book .row-body { margin-top: -1.125em; }
+
+  div.order-book h3 {
+    float: left;
+    display: inline-block;
+    margin: 0;
+    line-height: 1.5;
+    color: #7fcaff;
+  }
+  div.order-book h4 {
+    font-size: 0.75em;
+    line-height: 1.5em;
+    vertical-align: bottom;
+  }
+  div.order-book p {
+    font-size: 0.75em;
+    line-height: 1.5em;
+    vertical-align: bottom;
+  }
+  div.order-book span.--select{
+    float: right;
+    width: 40%;
+  }
+  div.order-book table {
+    float: left;
+    width: 50%;
+    border-collapse: collapse;
+    table-layout: fixed;
+  }
+  div.order-book td, div.order-book th {
+    font-size: 0.6875em;
+  }
+
+
+  div.order-book .col-left, div.order-book .col-right { width: 50%;  }
+  div.order-book .col-left tbody {  border-right: 1px solid #ffffff;  }
+  div.order-book .col-left p {  text-align: right;  padding-right: 8%;  }
+
+  div.order-book .col-right p {  padding-left: 8%;  }
+  div.order-book .col-right p { color: #9deaff}
+
+  /*row-exchange*/
+  div.row-exchange span.--select {
+    float: left;
+    width: 43%;
+  }
+  div.row-exchange span.--select:last-of-type {  float: right;   }
+  div.row-exchange span.--select:before { background: #3390aa;  }
+  div.row-exchange span.--select:after  { border-top: 6px solid #4c4c4c;  }
+  div.row-exchange select {
+    width: 100%;
+    padding: 3px 3em 3px 1em;
+    direction: rtl;
+    font-size: 0.5625em;
+    border-color: #3390aa;
+    color: #3390aa;
+  }
+  div.row-exchange button {
+    float: left;
+    padding-top: 5%;
+    width: 10%;
+    background-color: transparent;
+    background: url(../../assets/images/icons/ico-exchange.png) no-repeat center;
+    background-size: contain;
+  }
+
+  span.select-global {
+    margin-left: 30px;
+  }
+
+  /*trade-summary*/
+  div.trade-summary {
+    background: #ffffff;
+  }
+    /*trade-latest*/
+    div.trade-latest {
+      padding: 10px 25px;
+      background: #3390aa;
+    }
+    div.trade-latest p        {  font-size: 1.1875em;  font-weight: bold;  }
+    div.trade-latest p.label  {      color: #9deaff; }
+    div.trade-latest .values  {
+      float: right;
+      width: 50%;
+      display: block;
+      vertical-align: middle;
+      color: #ffffff;
+    }
+    div.trade-latest .values p {  float: left; width: 25%;  text-align: center;  }
+
+    /*trade-overview*/
+    div.trade-overview {
+      position: relative;
+      padding: 70px 25px;
+    }
+    div.trade-overview .col-left  {  width: 30%; }
+    div.trade-overview .col-right {  width: 70%; }
+    div.trade-overview table {
+    }
+    div.trade-overview th { font-weight: bold;  }
+    div.order-book tr.headval th {  font-size: 0.75em;  padding: 0 10px;  line-height: 1.5;   }
+    div.trade-overview td:first-child   { font-weight: bold;  color: #3390aa;  }
+    div.trade-overview th:nth-child(2), div.trade-overview td:nth-child(2)  { color: #6dbaf1; }
+    div.trade-overview th:nth-child(3), div.trade-overview td:nth-child(3)  { color: #c65959; }

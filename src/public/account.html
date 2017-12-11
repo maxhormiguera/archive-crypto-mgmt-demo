@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta http-equiv="Content-Type" content="text/html;">
+      <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+
+      <link rel="stylesheet" type="text/css" href="../../assets/css/app.css">
+  </head>
+  <body class="app account">
+    <!-- Side panel Start -->
+    <div class="side">
+      <div class="logo-container">
+        <a class="logo all-center"></a>
+      </div>
+      <ul class="navigation">
+        <li><a href="dashboard.html"><i class="ico ico-menu ico-dashboard" aria-hidden="true"></i>DASHBOARD</a></li>
+        <li><a class="active"><i class="ico ico-menu ico-account" aria-hidden="true"></i>ACCOUNT</a></li>
+        <li><a href="trade.html"><i class="ico ico-menu ico-trade" aria-hidden="true"></i>TRADE</a></li>
+        <li><a href="support.html"><i class="ico ico-menu ico-support" aria-hidden="true"></i>SUPPORT</a></li>
+        <li><a href="funds-transactions.html"><i class="ico ico-menu ico-funds" aria-hidden="true"></i>FUNDS</a></li>
+        <li><a href="orders.html"><i class="ico ico-menu ico-orders" aria-hidden="true"></i>ORDERS</a></li>
+      </ul>
+    </div>
+    <!-- Side navigation End -->
+    <header>
+      <div class="row header clear">
+        <div class="clear">
+          <h1 class="left">ACCOUNT</h1>
+          <div class="search right">
+            <span>Search</span>
+            <button class="btn-min-search"><span class="ico ico-search"></span></button>
+            <input type="text" class="search">
+          </div>
+        </div>
+        <hr>
+        <span class="update right">NEW UPDATE AVAILABLE <span class="ico ico-download"></span></span>
+      </div>
+    </header>
+    <main class="content">
+      <div class="container container-white">
+        <div class="profile-overview h-center all-left-clear">
+          <div class="infogroup-ico">
+            <img id="user-avatar" class="infogroup-icon" src="../../assets/images/amine_avatar.png" alt="user avatar"/>
+          </div>
+          <div class="user-infogroup infogroup">
+            <p id="user-name">amine@cryptalone.io</p>
+            <p id="user-latestlog">Last log in Time: 2017-11-29	09:16:52	IP 43.226.7.58</p>
+            <div class="all-left-clear">
+              <p id="user-paymethod">Using BNB to pay for fees   ( 50% discount )</p>
+              <label><input type="checkbox" id="chk-paymethod"/><span class="--checkbox-switch"><span></span></span></label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row row-settings row-slim clear">
+          <div class="col col-left">
+            <div class="box all-left-clear">
+              <div class="infogroup-ico">
+                <img src="../../assets/images/icons/ico-privacy.png" alt=""/>
+              </div>
+              <div class="infogroup">
+                <p class="label">Log in Password</p>
+                <p class="desc">Used for Log in</p>
+              </div>
+            </div>
+            <div class="box all-left-clear">
+              <div class="infogroup-ico">
+                <img src="../../assets/images/icons/ico-api.png" alt=""/>
+              </div>
+              <div class="infogroup">
+                <p class="label">API</p>
+                <p class="desc">Creating API private key can get you access to market, real-time trading services on Cryptal Dash via a third-party website or mobile APP.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col col-right">
+            <h3>TWO-FACTOR AUTHENTICATION </h3>
+            <div class="box all-left-clear">
+              <div class="infogroup-ico">
+                <img src="../../assets/images/icons/ico-sms_auth.png" alt=""/>
+              </div>
+              <div class="infogroup">
+                <div class="left-right-clear">
+                  <p class="label">SMS AUTH</p>
+                  <label><input type="checkbox" id="chk-sms_auth"/><span class="--checkbox-switch --checkbox-switch-outline"><span></span></span></label>
+                </div>
+                <p class="desc">Used for withdrawals and security modifications</p>
+              </div>
+            </div>
+            <div class="box all-left-clear">
+              <div class="infogroup-ico">
+                <img src="../../assets/images/icons/ico-google_auth.png" alt=""/>
+              </div>
+              <div class="infogroup">
+                <div class="left-right-clear">
+                  <p class="label">Google AUTH</p>
+                  <label><input type="checkbox" id="chk-google_auth"/><span class="--checkbox-switch --checkbox-switch-outline"><span></span></span></label>
+                </div>
+                <p class="desc">Used for withdrawals and security modifications</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row row-userhistory row-slim">
+          <h3>DISTRIBUTION HISTORY</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Type</th>
+                <th>Coin</th>
+                <th>Amount</th>
+                <th>Note</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td colspan="5" class="noresults">
+                  <div class="all-left-clear">
+                    <img src="../../assets/images/icons/ico-white-noresults.png" alt=""/>
+                    <span>You have no distribution history.</span>
+                  </div>
+
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="row row-userhistory row-slim">
+          <h3>LAST LOG IN</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>IP Address</th>
+                <th>Location</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2017-11-29 9:17:52</td>
+                <td>43.226.7.58</td>
+                <td>Cebu City, Philippines</td>
+              </tr>
+              <tr>
+                <td>2017-11-29 9:17:52</td>
+                <td>43.226.7.58</td>
+                <td>Cebu City, Philippines</td>
+              </tr>
+              <tr>
+                <td>2017-11-29 9:17:52</td>
+                <td>43.226.7.58</td>
+                <td>Cebu City, Philippines</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>      <!-- end container -->
+
+    </main>
+
+
+  </body>
+  <script>
+    var user = {
+      img : '../../assets/images/amine_avatar.png',
+      email : 'amine@cryptalone.io',
+      login_history : [],
+      paymethod : 'BNB'
+    }
+
+  </script>
+
+</html>

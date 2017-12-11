@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta http-equiv="Content-Type" content="text/html;">
+      <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+
+      <link rel="stylesheet" type="text/css" href="../../assets/css/app.css">
+  </head>
+  <body class="app tradepage">
+    <!-- Side panel Start -->
+    <div class="side">
+      <div class="logo-container">
+        <a class="logo all-center"></a>
+      </div>
+      <ul class="navigation">
+        <li><a href="dashboard.html"><i class="ico ico-menu ico-dashboard" aria-hidden="true"></i>DASHBOARD</a></li>
+        <li><a href="account.html"><i class="ico ico-menu ico-account" aria-hidden="true"></i>ACCOUNT</a></li>
+        <li><a href="trade.html" class="active"><i class="ico ico-menu ico-trade" aria-hidden="true"></i>TRADE</a></li>
+        <li><a href="support.html"><i class="ico ico-menu ico-support" aria-hidden="true"></i>SUPPORT</a></li>
+        <li><a href="funds-transactions.html"><i class="ico ico-menu ico-funds" aria-hidden="true"></i>FUNDS</a></li>
+        <li><a href="orders.html"><i class="ico ico-menu ico-orders" aria-hidden="true"></i>ORDERS</a></li>
+      </ul>
+    </div>
+    <!-- Side navigation End -->
+    <header>
+      <div class="row header clear">
+        <div class="clear">
+          <h1 class="left">TRADE</h1>
+          <div class="search right">
+            <span>Search</span>
+            <button class="btn-min-search"><span class="ico ico-search"></span></button>
+            <input type="text" class="search">
+          </div>
+        </div>
+        <hr>
+        <span class="update right">NEW UPDATE AVAILABLE <span class="ico ico-download"></span></span>
+      </div>
+    </header>
+    <main class="content app">
+      <div class="container clear">
+        <div class="row"> <!-- order books -->
+          <div class="clear">
+            <span class="--select select-global">
+              <select>
+                <option>Bitcoin</option>
+                <option>Ethereum</option>
+                <option>Ripple</option>
+              </select>
+            </span>
+            <span class="--select select-global">
+              <select>
+                <option>Bitcoin</option>
+                <option>Ethereum</option>
+                <option>Ripple</option>
+              </select>
+            </span>
+          </div>
+          <div class="orderbooks_wrapper clear" id="orderbooks_wrapper">
+            <div class="box order-book">
+              <div class="row-head clear">
+                <h3>Bitit</h3>
+                <span class="--select order-book-selectpair"><select>
+                  <option>BTC - ETH</option>
+                  <option>BTC - USD</option>
+                  <option>BTC - XRP</option>
+                </select></span>
+              </div>
+              <h4>Order Book</h4>
+              <div class="row-body clear">
+                <table class="data-table bid-table">
+                  <thead>
+                    <tr class="headval">
+                      <th></th><th></th>
+                      <th class="bidval blue">00.00</th>
+                    </tr>
+                    <tr>
+                      <th>Total</th>
+                      <th>Volume</th>
+                      <th>Bid</th>
+                    </tr>
+                  </thead>
+                  <tbody></tbody>
+                </table>
+                <table class="data-table ask-table">
+                  <thead>
+                    <tr class="headval">
+                      <th class="askval red">00.00</th>
+                      <th></th><th></th>
+                    </tr>
+                    <tr>
+                      <th>Ask</th>
+                      <th>Volume</th>
+                      <th>Total</th>
+                    </tr>
+                  </thead>
+                  <tbody></tbody>
+                </table>
+              </div>
+            </div> <!-- order-book -->
+            <div class="box order-book">
+              <div class="row-head clear">
+                <h3>Bitit</h3>
+                <span class="--select order-book-selectpair"><select>
+                  <option>BTC - ETH</option>
+                  <option>BTC - USD</option>
+                  <option>BTC - XRP</option>
+                </select></span>
+              </div>
+              <h4>Order Book</h4>
+              <div class="row-body clear">
+                <table class="data-table bid-table">
+                  <thead>
+                    <tr class="headval">
+                      <th></th><th></th>
+                      <th class="bidval blue">00.00</th>
+                    </tr>
+                    <tr>
+                      <th>Total</th>
+                      <th>Volume</th>
+                      <th>Bid</th>
+                    </tr>
+                  </thead>
+                  <tbody></tbody>
+                </table>
+                <table class="data-table ask-table">
+                  <thead>
+                    <tr class="headval">
+                      <th class="askval red">00.00</th>
+                      <th></th><th></th>
+                    </tr>
+                    <tr>
+                      <th>Ask</th>
+                      <th>Volume</th>
+                      <th>Total</th>
+                    </tr>
+                  </thead>
+                  <tbody></tbody>
+                </table>
+              </div>
+            </div> <!-- order-book -->
+            <div class="box order-book">
+              <div class="row-head clear">
+                <h3>Bitit</h3>
+                <span class="--select order-book-selectpair"><select>
+                  <option>BTC - ETH</option>
+                  <option>BTC - USD</option>
+                  <option>BTC - XRP</option>
+                </select></span>
+              </div>
+              <h4>Order Book</h4>
+              <div class="row-body clear">
+                <table class="data-table bid-table">
+                  <thead>
+                    <tr class="headval">
+                      <th></th><th></th>
+                      <th class="bidval blue">00.00</th>
+                    </tr>
+                    <tr>
+                      <th>Total</th>
+                      <th>Volume</th>
+                      <th>Bid</th>
+                    </tr>
+                  </thead>
+                  <tbody></tbody>
+                </table>
+                <table class="data-table ask-table">
+                  <thead>
+                    <tr class="headval">
+                      <th class="askval red">00.00</th>
+                      <th></th><th></th>
+                    </tr>
+                    <tr>
+                      <th>Ask</th>
+                      <th>Volume</th>
+                      <th>Total</th>
+                    </tr>
+                  </thead>
+                  <tbody></tbody>
+                </table>
+              </div>
+            </div> <!-- order-book -->
+            <div class="box order-book">
+              <div class="row-head clear">
+                <h3>Bitit</h3>
+                <span class="--select order-book-selectpair"><select>
+                  <option>BTC - ETH</option>
+                  <option>BTC - USD</option>
+                  <option>BTC - XRP</option>
+                </select></span>
+              </div>
+              <h4>Order Book</h4>
+              <div class="row-body clear">
+                <table class="data-table bid-table">
+                  <thead>
+                    <tr class="headval">
+                      <th></th><th></th>
+                      <th class="bidval blue">00.00</th>
+                    </tr>
+                    <tr>
+                      <th>Total</th>
+                      <th>Volume</th>
+                      <th>Bid</th>
+                    </tr>
+                  </thead>
+                  <tbody></tbody>
+                </table>
+                <table class="data-table ask-table">
+                  <thead>
+                    <tr class="headval">
+                      <th class="askval red">00.00</th>
+                      <th></th><th></th>
+                    </tr>
+                    <tr>
+                      <th>Ask</th>
+                      <th>Volume</th>
+                      <th>Total</th>
+                    </tr>
+                  </thead>
+                  <tbody></tbody>
+                </table>
+              </div>
+            </div> <!-- order-book -->
+            <div class="box order-book">
+              <div class="row-head clear">
+                <h3>Bitit</h3>
+                <span class="--select order-book-selectpair"><select>
+                  <option>BTC - ETH</option>
+                  <option>BTC - USD</option>
+                  <option>BTC - XRP</option>
+                </select></span>
+              </div>
+              <h4>Order Book</h4>
+              <div class="row-body clear">
+                <table class="data-table bid-table">
+                  <thead>
+                    <tr class="headval">
+                      <th></th><th></th>
+                      <th class="bidval blue">00.00</th>
+                    </tr>
+                    <tr>
+                      <th>Total</th>
+                      <th>Volume</th>
+                      <th>Bid</th>
+                    </tr>
+                  </thead>
+                  <tbody></tbody>
+                </table>
+                <table class="data-table ask-table">
+                  <thead>
+                    <tr class="headval">
+                      <th class="askval red">00.00</th>
+                      <th></th><th></th>
+                    </tr>
+                    <tr>
+                      <th>Ask</th>
+                      <th>Volume</th>
+                      <th>Total</th>
+                    </tr>
+                  </thead>
+                  <tbody></tbody>
+                </table>
+              </div>
+            </div> <!-- order-book -->
+            <div class="box order-book">
+              <div class="row-head clear">
+                <h3>Bitit</h3>
+                <span class="--select order-book-selectpair"><select>
+                  <option>BTC - ETH</option>
+                  <option>BTC - USD</option>
+                  <option>BTC - XRP</option>
+                </select></span>
+              </div>
+              <h4>Order Book</h4>
+              <div class="row-body clear">
+                <table class="data-table bid-table">
+                  <thead>
+                    <tr class="headval">
+                      <th></th><th></th>
+                      <th class="bidval blue">00.00</th>
+                    </tr>
+                    <tr>
+                      <th>Total</th>
+                      <th>Volume</th>
+                      <th>Bid</th>
+                    </tr>
+                  </thead>
+                  <tbody></tbody>
+                </table>
+                <table class="data-table ask-table">
+                  <thead>
+                    <tr class="headval">
+                      <th class="askval red">00.00</th>
+                      <th></th><th></th>
+                    </tr>
+                    <tr>
+                      <th>Ask</th>
+                      <th>Volume</th>
+                      <th>Total</th>
+                    </tr>
+                  </thead>
+                  <tbody></tbody>
+                </table>
+              </div>
+            </div> <!-- order-book -->
+
+
+
+        </div>
+      </div>
+    </div>
+    <div class="container-white">
+      <div class="trade-summary">
+        <div class="row trade-latest clear">
+          <p class="label left">LATEST TRADE THAT OCCURED (XBT/EUR)</p>
+          <div class="values right clear">
+            <p>10:44:15 +00:00</p><p>buy</p><p>€8,249.0</p><p>0.13183145</p>
+          </div>
+        </div>
+
+        <div class="row trade-overview clear">
+        <div class="col col-left">
+          <table class="ov-data-table">
+            <thead>
+              <tr>
+                <th></th>
+                <th>BID</th>
+                <th>ASK</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Bitit</td>
+                <td>106.1</td>
+                <td>106.81</td>
+              </tr>
+              <tr>
+                <td>Coinhouse</td>
+                <td>106.1</td>
+                <td>106.81</td>
+              </tr>
+              <tr>
+                <td>Changelly</td>
+                <td>106.1</td>
+                <td>106.81</td>
+              </tr>
+              <tr>
+                <td>Coinmama</td>
+                <td>106.1</td>
+                <td>106.81</td>
+              </tr>
+              <tr>
+                <td>Coinbase</td>
+                <td>106.1</td>
+                <td>106.81</td>
+              </tr>
+              <tr>
+                <td>BitQuick</td>
+                <td>106.1</td>
+                <td>106.81</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col col-right">
+          <object id="graph1" type="image/svg+xml" data="../../assets/images/graph3.svg">
+            <p>Object failed to load</p>
+          </object>
+        </div>
+      </div>       <!-- end trade-summary -->
+    </div>
+
+
+    </main>
+
+
+  </body>
+  <script type="text/javascript">
+
+    var sampletradepairdata = [
+      {
+        'id' : 'bits008',
+        'marketexchange' : 'BitStamp',
+        'code' : 'BITS',
+        'asset1' : 'BTC',
+        'asset2' : 'ETH',
+        'bid' : 0.04595,
+        'price' : 0.04495,
+        'quantity' : 1.6522,
+        'total' : 0.945,
+        'timestamp' : '12-01 15:55:28'
+      },
+      {
+        'id' : 'bits007',
+        'marketexchange' : 'BitStamp',
+        'code' : 'BITS',
+        'asset1' : 'BTC',
+        'asset2' : 'ETH',
+        'ask' : 0.041,
+        'price' : 0.04595,
+        'quantity' : 1.2522,
+        'total' : 0.945,
+        'timestamp' : '12-01 15:50:21'
+      },
+      {
+        'id' : 'bits006',
+        'marketexchange' : 'BitStamp',
+        'code' : 'BITS',
+        'asset1' : 'BTC',
+        'asset2' : 'ETH',
+        'bid' : 0.051,
+        'price' : 0.049,
+        'quantity' : 1.5522,
+        'total' : 0.945,
+        'timestamp' : '12-01 15:49:21'
+      },
+      {
+        'id' : 'bits005',
+        'marketexchange' : 'BitStamp',
+        'code' : 'BITS',
+        'asset1' : 'BTC',
+        'asset2' : 'ETH',
+        'ask' : 0.0444,
+        'price' : 0.04795,
+        'quantity' : 1.1522,
+        'total' : 0.945,
+        'timestamp' : '12-01 15:45:21'
+      },
+      {
+        'id' : 'bits004',
+        'marketexchange' : 'BitStamp',
+        'code' : 'BITS',
+        'asset1' : 'BTC',
+        'asset2' : 'ETH',
+        'bid' : 0.0455,
+        'price' : 0.04495,
+        'quantity' : 1.5522,
+        'total' : 0.945,
+        'timestamp' : '12-01 15:44:21'
+      },
+      {
+        'id' : 'bits003',
+        'marketexchange' : 'BitStamp',
+        'code' : 'BITS',
+        'asset1' : 'BTC',
+        'asset2' : 'ETH',
+        'ask' : 0.04295,
+        'price' : 0.04395,
+        'quantity' : 1.5522,
+        'total' : 0.945,
+        'timestamp' : '12-01 15:43:21'
+      },
+      {
+        'id' : 'bits002',
+        'marketexchange' : 'BitStamp',
+        'code' : 'BITS',
+        'asset1' : 'BTC',
+        'asset2' : 'ETH',
+        'bid' : 0.045,
+        'price' : 0.04435,
+        'quantity' : 1.6522,
+        'total' : 0.945,
+        'timestamp' : '12-01 15:42:21'
+      },
+      {
+        'id' : 'bits001',
+        'marketexchange' : 'BitStamp',
+        'code' : 'BITS',
+        'asset1' : 'BTC',
+        'asset2' : 'ETH',
+        'ask' : 0.043,
+        'price' : 0.04325,
+        'quantity' : 1.5522,
+        'total' : 0.945,
+        'timestamp' : '12-01 15:40:21'
+      },
+      {
+        'id' : 'bits001',
+        'marketexchange' : 'BitStamp',
+        'code' : 'BITS',
+        'asset1' : 'BTC',
+        'asset2' : 'ETH',
+        'bid' : 0.0456,
+        'price' : 0.04445,
+        'quantity' : 1.5522,
+        'total' : 0.945,
+        'timestamp' : '12-01 15:40:21'
+      },
+      {
+        'id' : 'bits001',
+        'marketexchange' : 'BitStamp',
+        'code' : 'BITS',
+        'asset1' : 'BTC',
+        'asset2' : 'ETH',
+        'ask' : 0.0443,
+        'price' : 0.0444,
+        'quantity' : 1.5522,
+        'total' : 0.945,
+        'timestamp' : '12-01 15:40:21'
+      },
+      {
+        'id' : 'bits008',
+        'marketexchange' : 'BitStamp',
+        'code' : 'BITS',
+        'asset1' : 'BTC',
+        'asset2' : 'ETH',
+        'ask' : 0.04395,
+        'price' : 0.04495,
+        'quantity' : 1.6522,
+        'total' : 0.945,
+        'timestamp' : '12-01 15:55:28'
+      },
+      {
+        'id' : 'bits007',
+        'marketexchange' : 'BitStamp',
+        'code' : 'BITS',
+        'asset1' : 'BTC',
+        'asset2' : 'ETH',
+        'bid' : 0.047,
+        'price' : 0.04595,
+        'quantity' : 1.2522,
+        'total' : 0.945,
+        'timestamp' : '12-01 15:50:21'
+      },
+      {
+        'id' : 'bits006',
+        'marketexchange' : 'BitStamp',
+        'code' : 'BITS',
+        'asset1' : 'BTC',
+        'asset2' : 'ETH',
+        'ask' : 0.04844,
+        'price' : 0.049,
+        'quantity' : 1.5522,
+        'total' : 0.945,
+        'timestamp' : '12-01 15:49:21'
+      },
+      {
+        'id' : 'bits005',
+        'marketexchange' : 'BitStamp',
+        'code' : 'BITS',
+        'asset1' : 'BTC',
+        'asset2' : 'ETH',
+        'bid' : 0.05295,
+        'price' : 0.04895,
+        'quantity' : 1.1522,
+        'total' : 0.945,
+        'timestamp' : '12-01 15:45:21'
+      },
+      {
+        'id' : 'bits004',
+        'marketexchange' : 'BitStamp',
+        'code' : 'BITS',
+        'asset1' : 'BTC',
+        'asset2' : 'ETH',
+        'ask' : 0.04295,
+        'price' : 0.04495,
+        'quantity' : 1.5522,
+        'total' : 0.945,
+        'timestamp' : '12-01 15:44:21'
+      },
+      {
+        'id' : 'bits003',
+        'marketexchange' : 'BitStamp',
+        'code' : 'BITS',
+        'asset1' : 'BTC',
+        'asset2' : 'ETH',
+        'bid' : 0.0445,
+        'price' : 0.04395,
+        'quantity' : 1.5522,
+        'total' : 0.945,
+        'timestamp' : '12-01 15:43:21'
+      },
+      {
+        'id' : 'bits002',
+        'marketexchange' : 'BitStamp',
+        'code' : 'BITS',
+        'asset1' : 'BTC',
+        'asset2' : 'ETH',
+        'ask' : 0.0424,
+        'price' : 0.04435,
+        'quantity' : 1.6522,
+        'total' : 0.945,
+        'timestamp' : '12-01 15:42:21'
+      },
+      {
+        'id' : 'bits001',
+        'marketexchange' : 'BitStamp',
+        'code' : 'BITS',
+        'asset1' : 'BTC',
+        'asset2' : 'ETH',
+        'bid' : 0.0456,
+        'price' : 0.04325,
+        'quantity' : 1.5522,
+        'total' : 0.945,
+        'timestamp' : '12-01 15:40:21'
+      },
+      {
+        'id' : 'bits001',
+        'marketexchange' : 'BitStamp',
+        'code' : 'BITS',
+        'asset1' : 'BTC',
+        'asset2' : 'ETH',
+        'ask' : 0.043,
+        'price' : 0.04445,
+        'quantity' : 1.5522,
+        'total' : 0.945,
+        'timestamp' : '12-01 15:40:21'
+      },
+      {
+        'id' : 'bits001',
+        'marketexchange' : 'BitStamp',
+        'code' : 'BITS',
+        'asset1' : 'BTC',
+        'asset2' : 'ETH',
+        'bid' : 0.0445,
+        'price' : 0.0444,
+        'quantity' : 1.5522,
+        'total' : 0.945,
+        'timestamp' : '12-01 15:40:21'
+      }
+    ]
+
+    // ==== fill graphs ====
+    document.getElementById('graph1').onload = function(){
+      setGraph('graph1', sampletradepairdata);
+    };
+
+    function setGraph(graphname, data) {
+      var graph = document.getElementById(graphname).contentDocument.childNodes[0];
+      var svg_ns = 'http://www.w3.org/2000/svg';
+      var graphlength = 400;
+      var graphheight = 120;
+      var graphx = 30;
+      var graphy = 10;
+
+
+      var lines = graph.getElementsByClassName('line');
+      var grads = graph.getElementsByClassName('grad');
+      var timelbl = graph.getElementsByClassName('time');
+
+      var graphgrad = 0.001;
+      var gradscale = 10
+
+      var m_price = findMedian(data, 'price');
+      m_price = +m_price.toFixed(3);
+
+
+      for (var i = 0; i < grads.length; i++) {
+        var c = Math.floor(grads.length / 2);
+        var d = (c - i) * graphgrad;
+        grads[i].textContent = (m_price+d).toFixed(4);
+
+        if(i == c) {
+           lines[i].setAttribute('stroke', '#ec4c4c');
+           lines[i].setAttribute('stroke-dasharray', '1');
+        }
+      } // price range labels
+
+      for (var i = 0; i < timelbl.length; i++) {
+        // timelbl[i].textContent = (m_price+d).toFixed(4);
+        timelbl[i].setAttribute('x', graphx+5 + (i*10));
+
+
+      } // time labels
+
+
+      for (var i = 0; i < data.length; i++) {
+        var bidbar = document.createElementNS(svg_ns, 'rect');
+          bidbar.setAttributeNS(null, 'width', '4');
+          bidbar.setAttributeNS(null, 'fill', '#4cec4c');
+          bidbar.setAttributeNS(null, 'fill-opacity', '0.6');
+        var askbar = document.createElementNS(svg_ns, 'rect');
+          askbar.setAttributeNS(null, 'width', '4');
+          askbar.setAttributeNS(null, 'fill', '#ec4c4c');
+          askbar.setAttributeNS(null, 'fill-opacity', '0.6');
+        if(!data[i]) {
+          // default attrs
+          bidbar.setAttributeNS(null, 'x', graphx+1 + (i*10));
+          askbar.setAttributeNS(null, 'x', graphx+5 + (i*10));
+
+
+
+        }
+        else {
+          var barY = (graphheight / 2) + ((m_price - data[i].price) / graphgrad  * gradscale);
+
+          if(data[i].bid) {
+            var bidH = (data[i].bid - data[i].price) / graphgrad * gradscale;
+            bidbar.setAttribute('fill', '#4cec4c');
+            bidbar.setAttribute('x', graphx+1 + (i*10));
+            bidbar.setAttribute('y', barY - bidH);
+            bidbar.setAttribute('height', bidH);
+          } else {
+            bidbar.setAttribute('x', graphx+1 + (i*10));
+            bidbar.setAttribute('y', barY - 1);
+            bidbar.setAttribute('height', 1);
+          }
+          if (data[i].ask) {
+            var askH = (data[i].price - data[i].ask) / graphgrad * gradscale;
+            askbar.setAttribute('fill', '#ec4c4c');
+            askbar.setAttribute('x', graphx+5 + (i*10));
+            askbar.setAttribute('y', barY);
+            askbar.setAttribute('height', askH);
+          } else {
+            askbar.setAttribute('x', graphx+5 + (i*10));
+            askbar.setAttribute('y', barY);
+            askbar.setAttribute('height', 1);
+          }
+
+
+          graph.appendChild(bidbar);
+          graph.appendChild(askbar);
+
+
+
+          // console.log('bidH, barY, askH', bidH, barY, askH, '--', data[i].bid);
+          // console.log('bid price ask', data[i].bid, data[i].price, data[i].ask);
+        }
+
+      }
+
+      graph.addEventListener('mousedown', function(e) {
+        console.log('!', e);
+      });
+
+
+
+
+    } // end setGraph
+
+    function findMedian(data, key) {
+      // extract the .values field and sort the resulting array
+      var m = data.map(function(v) {
+        return v[key];
+      }).sort(function(a, b) {
+        return a - b;
+      });
+
+      var middle = Math.floor((m.length - 1) / 2);
+      if (m.length % 2) {
+        return m[middle];
+      } else {
+        return (m[middle] + m[middle + 1]) / 2.0;
+      }
+
+    } // find median value
+
+
+    // ==== fill order books ====
+    var sampleorderbookdata = [
+      {
+        'marketexchange' : 'BitStamp',
+        'data' : sampletradepairdata
+      },
+      {
+        'marketexchange' : 'Coinhouse',
+        'data' : sampletradepairdata
+      },
+      {
+        'marketexchange' : 'Changelly',
+        'data' : sampletradepairdata
+      },
+      {
+        'marketexchange' : 'Coinmama',
+        'data' : sampletradepairdata
+      },
+      {
+        'marketexchange' : 'Coinbase',
+        'data' : sampletradepairdata
+      },
+      {
+        'marketexchange' : 'BitQuick',
+        'data' : sampletradepairdata
+      },
+    ];
+
+    fillOrderBook(sampleorderbookdata);
+
+    function fillOrderBook(data) {
+      var datatables_con = document.getElementById('orderbooks_wrapper');
+      var orderbooks = datatables_con.getElementsByClassName('order-book');
+      var ov_row = document.getElementsByClassName('ov-data-table')[0].querySelector('tbody').getElementsByTagName('tr');
+
+      for (var i = 0; i < orderbooks.length; i++) {
+        console.log(data[i]);
+
+        var highestbid = Math.max.apply(Math, data[i].data.map(function(o){ return o.bid; }).filter(function( element ) {   return element !== undefined;}));
+        var lowestbid = Math.min.apply(Math, data[i].data.map(function(o){ return o.ask; }).filter(function( element ) {   return element !== undefined;}));
+
+
+        orderbooks[i].querySelector('.bidval').innerHTML = highestbid;
+        orderbooks[i].querySelector('.askval').innerHTML = lowestbid;
+        orderbooks[i].querySelector('.row-head h3').innerHTML = data[i].marketexchange;
+        for (var j = 0; j < 8; j++) {
+          var dt;
+          var cell_d = [];
+          if(data[i].data[j].bid) {
+            dt = orderbooks[i].querySelector('.bid-table tbody');
+            cell_d[0] = data[i].data[j].total;
+            cell_d[1] = data[i].data[j].quantity;
+            cell_d[2] = data[i].data[j].bid;
+          }
+          else if(data[i].data[j].ask) {
+            dt = orderbooks[i].querySelector('.ask-table tbody');
+            cell_d[0] = data[i].data[j].ask;
+            cell_d[1] = data[i].data[j].quantity;
+            cell_d[2] = data[i].data[j].total;
+          }
+          var tr = dt.insertRow();
+          cell_d.forEach(function(o, p) {
+            tr.insertCell(p).innerHTML = o;
+          });
+        }
+
+        ov_row[i].querySelector('td:first-child').innerHTML = data[i].marketexchange;
+        ov_row[i].querySelector('td:nth-child(2)').innerHTML = highestbid;
+        ov_row[i].querySelector('td:nth-child(3)').innerHTML = lowestbid;
+
+
+
+      } // end for
+    }
+
+
+  </script>
+
+</html>

@@ -1,0 +1,233 @@
+
+/*====== TABLE OF CONTENTS ======*/
+  /*
+  * Sidepanel
+      side
+      navigation
+      subnavigation
+  * Dashboard Content
+      columns
+      overview
+        graph
+        tabs
+      wallet
+      fillbar
+      fillbar legend
+      table
+      my Advisor
+        quicktips
+  */
+
+/*==== sidepanel */
+.side {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 300px;
+  z-index: 989;
+
+  background: url('../../assets/images/sidemenu_bg.png') no-repeat bottom;
+}
+
+.logo-container {
+  position: relative;
+  height: 190px;
+}
+  .logo-container .logo {
+    display: inherit;
+    height: 41px;
+    width: 221px;
+    background: url('../../assets/images/cryptaldash-white_logo.png') no-repeat center;
+    background-size: contain;
+  }
+
+.navigation li {
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.navigation li > a {
+  display: block;
+  position: relative;
+  padding-left: 40px;
+  line-height: 60px;
+  font-size: 1.125em;
+  color: #eee;
+}
+
+.navigation a .fa { margin-right: 10px; }
+.navigation li > a:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background: #ffffff;
+    opacity: 0.4;
+    -webkit-transition: width 0.4s;
+    -moz-transition: width 0.4s;
+    transition: width 0.4s;
+}
+.navigation li > a:hover:before{  width: 100%;  }
+
+.subnavigation {
+  border-top: 1px solid #1a1a1a;
+  border-bottom: 1px solid #1a1a1a;
+}
+.subnavigation li > a { padding-left: 80px; }
+
+
+/*==== Dashboard Content*/
+.content.dashboard {  padding: 0 0 0 300px; }
+  /*cols*/
+  .left-column {
+    margin-right: 50px;
+    width: calc(66% - 25px);
+  }
+  .right-column {  width: calc(33% - 25px);  }
+
+  /*overview*/
+  .overview {
+    padding: 65px 50px 50px;
+    background: #fff;
+  }
+    /*graph*/
+    .graph-wrapper {
+      position: relative;
+      float: left;
+      width: 30%;
+      width: calc(33.33% - 20px);
+      vertical-align: bottom;
+    }
+    .graph-wrapper:not(:last-child) { margin-right: 30px; }
+
+
+    /*tabs*/
+    .tabs {
+      position: absolute;
+      top: 0;
+      transform: translateY(-100%);
+    }
+    .tabs li {
+      display: block;
+      float: right;
+      padding: 4px 10px;
+      font-size: 0.75em;
+      background: #dbd2ec;
+      border-radius: 5px 5px 0px 0px;
+      box-shadow: 1px 1px 1px 0px;
+      cursor: pointer;
+    }
+    .tabs li.active { background: #b1a3ca; }
+    .tabs li:not(:last-child) { margin-left: -5px;  }
+
+    /*wallet*/
+    .wallet-ratio { text-align: right; }
+
+    /*fillbar*/
+    .fillbar {
+      height: 20px;
+      width: 100%;
+      overflow: hidden;
+      border-radius: 10px;
+      background: #e1e1e1;
+    }
+    .fillbar > div {
+      float: left;
+      height: 100%;
+      background: #a4bce7;
+    }
+
+    .wallet-ratio .fillbar {  margin-bottom: 5px; }
+    .util .fillbar {  margin-top: 5px; }
+
+    .fillbar .btc { background: #f7931a; }
+    .fillbar .eth { background: #6679bb; }
+    .fillbar .xdg { background: #bc9c1e; }
+    .fillbar .xrp { background: #00aae4; }
+
+    /*fillbar legend*/
+    span.legend {
+      position: relative;
+      margin-left: 40px;
+      font-size: 0.75em;
+    }
+    span.legend:first-of-type { margin: 0; }
+    span.legend:before {
+      content: '';
+      position: absolute;
+      display: block;
+      top: 2px;
+      left: -15px;
+      height: 12px;
+      width: 12px;
+    }
+    span.legend.btc:before {  background: #f7931a;  }
+    span.legend.eth:before {  background: #6679bb;  }
+    span.legend.xdg:before {  background: #bc9c1e;  }
+    span.legend.xrp:before {  background: #00aae4;  }
+
+    /*table*/
+    .box table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    .box tbody tr:nth-child(odd) {
+      background: #e7e1f3;
+    }
+    .box th, .box td {
+      line-height: 1.2;
+      text-align: left;
+      padding: 5px 10px;
+    }
+    .box th { font-size: 0.75em; }
+    .box th:first-child {
+      padding: 0;
+      font-size: 1em;
+    }
+    .box td { font-size: 0.6875em;  }
+    .box td:not(:first-child):not(:last-child) {
+      word-break: break-all;
+      text-indent: -14px;
+      padding-left: 24px;
+    }
+    .box table .ico {
+      height: 12px;
+      width: 12px;
+      margin-right: 2px;
+    }
+
+
+    /*My Advisor*/
+    /*quicktips*/
+    .quicktips {
+      position: relative;
+      width: 80%;
+      margin: 0 auto;
+      padding: 10px;
+      font-size: 0.75em;
+      line-height: 1.5;
+      box-shadow: 2px 2px 5px;
+      cursor: pointer;
+    }
+    .quicktips:before, .quicktips:after {
+      content: '';
+      position: absolute;
+      top: calc(50% - 15px);
+      border-top: 15px solid transparent;
+      border-bottom: 15px solid transparent;
+      opacity: 0.7;
+
+    }
+    .quicktips:before {
+      left: -15px;
+      border-right: 15px solid #a18dc5;
+    }
+    .quicktips:after {
+      right: -15px;
+      border-left: 15px solid #a18dc5;
+    }
+    .quicktips:hover:before, .quicktips:hover:after { opacity: 1; }

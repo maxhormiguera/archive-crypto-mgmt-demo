@@ -1,0 +1,286 @@
+
+/*====== TABLE OF CONTENTS ======*/
+  /*
+  * Base / Tags
+      layout (header, main footer)
+      text tags
+      input
+          input text
+          input radio
+          form elements
+  * Reusable Classes
+      header
+          logo
+          header-menu
+      main
+          wrapper
+          box elements
+          rows
+      footer
+  * Icons
+  * Utility Classes
+      clearfix
+      center object (all, vertical)
+      text ruling
+
+
+  */
+
+
+/*==== Base*/
+  /*layout*/
+  html {  height: 100%;  }
+  body {
+    position: relative;
+    min-height: 100%;
+    font-size: 16px;    
+  }
+  header {
+    position: fixed;
+    top: 0;
+    height: 100px;
+    width: 100%;
+    z-index: 990;
+    background: #1a1a1a;
+  }
+  main {
+    display: block;
+    padding: 100px 0 0 0;
+  }
+  /*text tags*/
+  h2, h3, h4 {
+    color: #5c5c5c;
+    font-family: LatoBlack;
+    font-weight: bold;
+    margin: 0;
+  }
+  h2 { font-size: 1.875em;}
+  h3 {  font-size: 1.125em;}
+  h4 { font-size: 1em; }
+
+  p, span, table, li, a{
+    font-family: Lato;
+  }
+  strong { font-family: LatoBlack; color: #454b57; }
+
+  p {
+    margin: 0;
+    font-size: 0.875em;
+    color: #767676;
+  }
+/*input*/
+  /*input text*/
+  form input[type='text'] {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  input[type="text"]::placeholder {
+    font-size: 0.875em;
+    font-family: LatoLight;
+  }
+  input[type='text'].col-half {
+    width: 50%;
+    width: calc(50% - 10px);
+    float: left;
+  }
+  input[type='text'].col-half:first-child { margin-right: 20px; }
+
+  /*input radio*/
+  input[type="radio"] { display: none; }
+  input[type="radio"]+span.--radio {
+    position: relative;
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border: 1px solid #767676;
+    border-radius: 50%;
+    line-height: normal;
+    vertical-align: middle;
+  }
+  input[type="radio"]:checked+span.--radio > span {
+    position: absolute;
+    display: block;
+    top: 2px;
+    left: 2px;
+    width: 10px;
+    height: 10px;
+    background: #7357a5;
+    border-radius: 50%;
+  }
+
+
+  button {
+    padding: 5px 10px;
+    width: 100%;
+    font-family: LatoBlack;
+    font-size: 1.125em;
+    border-style: none;
+    border-radius: 5px;
+    background: #7357a5;
+    background: -webkit-linear-gradient(#a490c7, #7054a3); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#a490c7, #7054a3); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#a490c7, #7054a3); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#a490c7, #7054a3); /* Standard syntax */
+    color: #fff;
+    white-space: nowrap;
+    cursor: pointer;
+  }
+
+  /*form elements*/
+  form a {  color: #7357a5; }
+  form p {  display: inline-block;  }
+  form p.radio-label {  margin-left: 20px;  }
+  form p.radio-label label {  display: inherit;    margin: 0 0 0 -20px;  }
+
+
+
+/*==== header elements*/
+header .logo {
+  height: 41px;
+  width: 221px;
+  background: url(../../assets/images/header_logo.png) no-repeat;
+  background-size: 100%;
+}
+.header-menu li {
+  float: left;
+  display: block;
+  height: 100px;
+  position: relative;
+}
+  .header-menu li:hover {
+    background: #1f1f1f;
+    height: 96px;
+    border-bottom: 4px solid #dbd2ec;
+    -webkit-transition: border 0.2s, height 0.2s, background 0.2s;
+    -moz-transition: border 0.2s, height 0.2s, background 0.2s;
+    transition: border 0.2s, height 0.2s, background 0.2s
+  }
+
+.header-menu a {
+  display: inline-block;
+  padding: 0 20px;
+  vertical-align: middle;
+  line-height: 100px;
+}
+  .header-menu li:hover a { color: #c1c1c1; }
+
+.header-menu button {
+  display: inline-block;
+  padding: 0 20px;
+  line-height: 100px;
+  background: transparent;
+}
+
+/*==== main*/
+  /*wrapper*/
+  .wrapper {
+    position: relative;
+    margin: 50px;
+  }
+  .wrapper.slim {
+    width: 70%;
+    margin: 50px auto;
+    padding: 0;
+  }
+    header .wrapper, header .wrapper.slim {  margin-top: 0; }
+
+  /*box elements*/
+  .box {
+    position: relative;
+    padding: 30px;
+    margin-bottom: 50px;
+    background: #fff;
+    border-radius: 10px;
+  }
+  .box > *:not(:last-child) {    margin-bottom: 20px;  }
+
+  /*rows*/
+  .form-row {
+    position: relative;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+
+
+/*==== icons*/
+    /*cryptocurrencies*/
+    .ico-btc  { background: url(../../assets/images/crypto-icons/ico-btc.png) no-repeat center; }
+    .ico-eth  { background: url(../../assets/images/crypto-icons/ico-eth.png) no-repeat center; }
+    .ico-xdg  { background: url(../../assets/images/crypto-icons/ico-xdg.png) no-repeat center; }
+    .ico-xrp  { background: url(../../assets/images/crypto-icons/ico-xrp.png) no-repeat center; }
+
+    .ico-bittrex    { background: url(../../assets/images/crypto-icons/ico-bittrex.png) no-repeat center; }
+    .ico-changelly  { background: url(../../assets/images/crypto-icons/ico-changelly.png) no-repeat center; }
+    .ico-poloniex   { background: url(../../assets/images/crypto-icons/ico-poloniex.png) no-repeat center; }
+    .ico-shapeshift { background: url(../../assets/images/crypto-icons/ico-shapeshift.png) no-repeat center; }
+    .ico-cex        { background: url(../../assets/images/crypto-icons/ico-cex.png) no-repeat center; }
+
+    /*menu*/
+    /*dashboard1*/
+    .ico-dashboard  { background: url(../../assets/images/icons/dashboard1/ico-dashboard.png) no-repeat center; }
+    .ico-portfolio  { background: url(../../assets/images/icons/dashboard1/ico-portfolio.png) no-repeat center; }
+    .ico-wallet     { background: url(../../assets/images/icons/dashboard1/ico-wallet.png) no-repeat center; }
+    .ico-exchange   { background: url(../../assets/images/icons/dashboard1/ico-exchange.png) no-repeat center; }
+    .ico-community  { background: url(../../assets/images/icons/dashboard1/ico-community.png) no-repeat center; }
+    .ico-tokenhub   { background: url(../../assets/images/icons/dashboard1/ico-tokenhub.png) no-repeat center; }
+    .ico-services   { background: url(../../assets/images/icons/dashboard1/ico-services.png) no-repeat center; }
+    .ico-financials { background: url(../../assets/images/icons/dashboard1/ico-financials.png) no-repeat center; }
+    .ico-tools      { background: url(../../assets/images/icons/dashboard1/ico-tools.png) no-repeat center; }
+    /*dashboard2*/
+    .ico-dashboard  { background: url(../../assets/images/icons/ico-dashboard.png) no-repeat center; }
+    .ico-account  { background: url(../../assets/images/icons/ico-account.png) no-repeat center; }
+    .ico-trade     { background: url(../../assets/images/icons/ico-trade.png) no-repeat center; }
+    .ico-support   { background: url(../../assets/images/icons/ico-support.png) no-repeat center; }
+    .ico-otherservices  { background: url(../../assets/images/icons/ico-otherservices.png) no-repeat center; }
+
+
+
+.ico {
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+  margin-right: 4px;
+  vertical-align: middle;
+  background-size: contain;
+}
+.ico-menu {
+  margin-right: 30px;
+  height: 25px;
+  width: 25px;
+}
+
+/*=== util classes*/
+  /*clearfix*/
+  .clear:after {
+    display: block;
+    height: 0;
+    clear: both;
+    content: "";
+    visibility: hidden;
+  }
+
+  /*center object*/
+  .all-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  .v-center {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  /*text ruling*/
+  .green        {  color: #217533 !important; }
+  .red          {  color: #cf1d1d !important;  }
+  .text-indent  { text-indent: 1.5em; }
+  .text-center  { text-align: center; }
+  .strong       { font-weight: bold; }
+  .small {
+    line-height: normal;
+    font-size: 0.75em;
+   }

@@ -1,0 +1,129 @@
+@import url("__global.css");
+@import url("../fonts/css/fonts.css");
+@import url("__common.css");
+
+@import url("__dashboard.css");
+@import url("__tradepage.css");
+@import url("__account.css");
+@import url("__support.css");
+@import url("__funds.css");
+
+
+body {  background-size: cover; }
+
+
+
+/*==== header*/
+header {
+  height: auto;
+  background: #4c4c4c;
+  margin: 0 0 0 145px;
+  padding: 30px 0 10px;
+}
+  /*sublinks*/
+  ul.sublinks li a {
+    font-size: 0.625em;
+    font-weight: 500;
+    color: #3c8bb9;
+  }
+  ul.sublinks li.active a { font-weight: bold;  }
+
+  div.search {    font-size: 1.125em;    line-height: 1;  }
+  div.search input {
+    background: transparent;
+    border: none;
+    color: #ffffff;
+    font-family: Raleway;
+    font-size: 1.125em;
+    font-weight: 300;
+  }
+  span.update {    font-size: 0.625em;    font-weight: bold;  }
+  span.update > .ico-download {    margin-left: 5px;  }
+
+
+/*==== main content */
+.content {  margin: 0 0 0 145px;  min-height: 712px;  }
+.container {  background: #4c4c4c; }
+.container-white {  background: #ffffff;  color: #4c4c4c;  }
+
+
+
+
+
+/*==== sidepanel */
+.side {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 145px;
+  background: url(../../assets/images/bg.png) no-repeat top left;
+  background-size: auto 100%;
+  z-index: 989;
+}
+
+.logo-container {  position: relative;  height: 190px;  }
+  .side .logo {
+    display: inherit;
+    height: 79px;
+    width: 79px;
+    background: url(../../assets/images/cryptaldash_logo.png) no-repeat center;
+    background-size: contain;
+  }
+
+.navigation li {
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.navigation li > a {
+  display: block;
+  position: relative;
+  padding: 15px 10px;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 0.875em;
+  color: #fffefe;
+}
+
+.navigation a .fa { margin-right: 10px; }
+.navigation li > a:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background: #ffffff;
+    opacity: 0.4;
+    -webkit-transition: width 0.4s;
+    -moz-transition: width 0.4s;
+    transition: width 0.4s;
+}
+.navigation li > a.active, .navigation li > a:hover {
+  color: #ffffff;
+  font-weight: bold;
+}
+.navigation li > a.active:before, .navigation li > a:hover:before {  width: 100%;  }
+
+.subnavigation {
+  border-top: 1px solid #1a1a1a;
+  border-bottom: 1px solid #1a1a1a;
+}
+.subnavigation li > a { padding-left: 80px; }
+.ico-menu {
+  display: block;
+  margin: 0 auto 5px;
+  height: 30px;
+  width: 30px;
+}
+
+
+/*==== row-data no results*/
+td.noresults {
+  height: 100px;
+  text-align: center;
+}
+td.noresults div  { display: inline-block;  }
+div.noresults     { width: 50%; margin: auto; }

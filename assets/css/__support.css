@@ -1,0 +1,56 @@
+
+/*====== TABLE OF CONTENTS ======*/
+  /*
+
+  */
+
+
+
+
+/*==== Support Content*/
+.container-white h1 { color: #3c8bb9; }
+
+.support .container-white {
+    padding-top: 100px;
+}
+.contact-box {
+  padding: 50px 10px;
+}
+
+.right-buttons {
+  padding: 20px 0 30px;
+}
+
+.right-buttons button {
+  width: 40%;
+  background: transparent;
+  border: 1px solid #3c8bb9;
+  color: #3c8bb9;
+  display: block;
+  margin: 0 5%;
+}
+
+.recent-activity h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  color: #3c8bb9;
+}
+.recent-activity .box {
+  padding: 25px 10px 10px;
+  border-bottom: 1px solid #dbccf4;
+}
+.recent-activity p {
+  font-size: 0.75em;
+  font-weight: 500;
+  color: #3c8bb9;
+}
+.recent-activity .timestamp {
+  font-size: 0.5625em;
+  color: #777777;
+}
+.recent-activity  p.more {
+  margin-top: 30px;
+  font-size: 0.5625em;
+}
