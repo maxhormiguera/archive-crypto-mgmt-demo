@@ -37,7 +37,7 @@
   body {
     position: relative;
     font-family: Raleway;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 400;
     color: #ffffff;
     background-color: #4c4c4c;
@@ -320,11 +320,7 @@
       color: #629dc3;
     }
     button.btn-theme {
-      background-color: #447bc8; /* For browsers that do not support gradients */
-      background: -webkit-linear-gradient(left,#813bdc,#447bc8); /*Safari 5.1-6*/
-      background: -o-linear-gradient(right,#813bdc,#447bc8); /*Opera 11.1-12*/
-      background: -moz-linear-gradient(right,#813bdc,#447bc8); /*Fx 3.6-15*/
-      background: linear-gradient(to right, #813bdc,#447bc8); /*Standard*/
+      background-color: #3ab4dc;
       color: #ffffff;
     }
     button.btn-clear {
@@ -413,7 +409,11 @@
   .container-white {  background: #ffffff;  color: #4c4c4c;  }
   /*rows*/
   .row      {    width: 100%;    padding: 0 25px;  }
-  .row-slim { padding: 0 10%; }
+  .row-slim {
+    padding: 0 10%;
+    max-width: 1440px;
+    margin: auto;
+  }
   .row-center {
     width: 50%;
     display: inline-block;
@@ -443,18 +443,7 @@
   background-repeat: no-repeat;
   background-position: center;
 }
-    /*cryptocurrencies*/
-    /*.ico-btc  { background-image: url(../../assets/images/crypto-icons/ico-btc.png);}
-    .ico-eth  { background-image: url(../../assets/images/crypto-icons/ico-eth.png);}
-    .ico-xdg  { background-image: url(../../assets/images/crypto-icons/ico-xdg.png);}
-    .ico-xrp  { background-image: url(../../assets/images/crypto-icons/ico-xrp.png);}
-
-    .ico-bittrex    { background-image: url(../../assets/images/crypto-icons/ico-bittrex.png);}
-    .ico-changelly  { background-image: url(../../assets/images/crypto-icons/ico-changelly.png);}
-    .ico-poloniex   { background-image: url(../../assets/images/crypto-icons/ico-poloniex.png);}
-    .ico-shapeshift { background-image: url(../../assets/images/crypto-icons/ico-shapeshift.png);}
-    .ico-cex        { background-image: url(../../assets/images/crypto-icons/ico-cex.png);}*/
-
+  /*app*/
     /*menu*/
     .ico-dashboard      { background-image: url(../../assets/images/icons/navigation/ico-nav-dashboard.png);}
     .ico-account        { background-image: url(../../assets/images/icons/navigation/ico-nav-account.png);}
@@ -479,6 +468,18 @@
 
     .ico-export { background-image: url(../../assets/images/icons/ico-export.png); }
 
+  /*main*/
+    /*home*/
+    .ico-check-solidwhite {
+      background-image: url(../../assets/images/icons/ico-check-solidwhite.png);
+      width: 14px;
+      height: 14px;
+    }
+    .ico-download-doc {
+      background-image: url(../../assets/images/icons/ico-download-doc.png);
+      width: 28px;
+      height: 28px;
+    }
 
     .ico-dark-download {
       background-image: url(../../assets/images/icons/ico-dark-download.png);
@@ -500,7 +501,7 @@
   .left-right-clear > *:first-child {    float: left;  }
   .left-right-clear > *:last-child {    float: right;  }
   /*clearfix*/
-  .clear:after, .left-right-clear:after, .all-left-clear:after {
+  .clear:after, .left-right-clear:after, .all-left-clear:after, .itemlist:after, .tab-head:after {
     display: block;
     height: 0;
     clear: both;
