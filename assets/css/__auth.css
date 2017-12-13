@@ -177,3 +177,16 @@
   }
   .container-links ul:not(:last-of-type) {  width: 45%;  }
   .container-links ul:last-of-type {  width: 10%; }
+
+
+  .auth footer {s    
+    border-top: 1px solid #ddd;
+    background: #f1f2f6;
+    color: #55565a;
+  }
+  .auth footer .logo {
+   width: 164px;
+   height: 30px;
+   background: url(../../assets/images/footer_logo.png) no-repeat center;
+   background-size: contain;
+  }

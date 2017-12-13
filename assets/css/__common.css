@@ -51,12 +51,6 @@
     display: block;
     background: #ffffff;
   }
-  footer {
-    padding: 50px 10%;
-    border-top: 1px solid #ddd;
-    background: #f1f2f6;
-    color: #55565a;
-  }
 
   div { box-sizing: border-box;  }
 
@@ -539,4 +533,7 @@
   .small {
     line-height: normal;
     font-size: 0.75em;
-   }
+  }
+
+  /* visibility */
+  .hidden { display: none;  }
