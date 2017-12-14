@@ -32,6 +32,7 @@
 /* ==== containers */
 .home .container {
   min-height: auto;
+  padding: 100px 0;
   text-align: center;
 }
 .home .container-dark p.head {
@@ -48,12 +49,8 @@
 }
 
 /*==== itemlists*/
-.itemlist {
-  padding: 30px 0;
-}
-.item {
-  float: left;
-}
+.itemlist {  padding: 30px 0; }
+.item     {  float: left; }
 .item-txt {
   position: relative;
   height: 170px;
@@ -158,7 +155,8 @@ button.btn-registernow {
   /*==== about part-1 section*/
   .home .container-about {  padding: 100px 0 100px; }
   .container-about .row-slim:first-of-type   {   max-width: initial;  }
-  .container-about .row-slim {  padding-bottom: 30px;  }
+  .container-about .row-slim:not(:last-of-type) {  padding-bottom: 100px;  }
+
   .about-text {
     width: 60%;
     padding: 100px 30px 0 0;
@@ -220,6 +218,7 @@ button.btn-registernow {
     width: 100%    !important;
     height: auto   !important;
     max-height: 600px;
+    border: 1px solid;
   }
 
   /*==== exclusive bonus, utility*/
@@ -231,6 +230,10 @@ button.btn-registernow {
   .bonus-itemlist .item, .utility-itemlist .item {
     width: 33.33%;
     padding: 0 30px;
+  }
+
+  .container-roadmap .row-linemap {
+    padding: 0 10%;
   }
 
 
@@ -296,7 +299,10 @@ button.btn-registernow {
 
 
   /* ==== container strategy */
-  .container-strategy .row-slim {    padding: 40px 10%;  }
+  .home .container-strategy { padding: 200px 0; }
+  .container-strategy .row-slim:not(:first-of-type) {    padding: 200px 10% 0;  }
+  .container-strategy .row-slim:not(:last-of-type)  {    padding: 0 10% 200px;  }
+  .container-strategy .row-linemap {  padding: 100px 10%;  }
   .container-strategy .box-centered {      width: 60%;    padding: 30px 0; }
   .container-strategy p {    font-size: 1.1875em;  }
   .container-strategy table td, .container-strategy table th {
@@ -328,10 +334,7 @@ button.btn-registernow {
 
 
   /*==== container linemaps*/
-  .home .container-roadmap    {    padding: 110px 0 40px;  }
-  .home .row-linemap {    padding: 40px 10%;  }
-  /* .linemap { padding: 40px 0;} */
-
+  svg.linemap-tokensale {    padding-top: 30px;  }  /* for svg overflowing at the top */
   .linemap text  {    font-family: Raleway;  }
 
   .row-documents {    width: 45%;    margin: auto;  }
@@ -348,10 +351,11 @@ button.btn-registernow {
 
   ul.tab-head li {
     width: 33%;
+    padding: 10px 0;
     float: left;
     text-align: center;
-    padding: 10px 0;
     border-bottom: 2px solid #a0a0a0;
+    font-size: 1.125em;
   }
   ul.tab-head li.active, ul.tab-head li:hover {
     border-bottom: 2px solid #bf17a0;
@@ -389,10 +393,14 @@ button.btn-registernow {
       -webkit-filter: grayscale(1); /* Old WebKit */
     }
     .profile-name, .item-name {
-      font-size: 1.125em;
+      font-size: 1.1875em;
       font-weight: bold;
       color: #686868;
       white-space: nowrap;
+    }
+    .profile-title {
+      font-size: 0.9375em;
+      color: #686868;
     }
     .profile-soc {  text-align: center; }
 
