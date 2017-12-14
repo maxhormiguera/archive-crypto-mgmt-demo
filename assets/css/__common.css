@@ -37,7 +37,7 @@
   body {
     position: relative;
     font-family: Raleway;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 400;
     color: #ffffff;
     background-color: #4c4c4c;
@@ -466,20 +466,21 @@
     /*home*/
     .ico-check-solidwhite {
       background-image: url(../../assets/images/icons/ico-check-solidwhite.png);
-      width: 14px;
-      height: 14px;
+      width: 14px;      height: 14px;
     }
     .ico-download-doc {
       background-image: url(../../assets/images/icons/ico-download-doc.png);
-      width: 28px;
-      height: 28px;
+      width: 28px;      height: 28px;
     }
 
     .ico-dark-download {
       background-image: url(../../assets/images/icons/ico-dark-download.png);
-      width: 26px;
-      height: 31px;
+      width: 26px;      height: 31px;
       margin-right: 10px;
+    }
+    .ico-linkedIn {
+      background-image: url(../../assets/images/icons/ico-linkedIn.png);
+      width: 20px;      height: 20px;
     }
 
 

@@ -8,7 +8,7 @@
 .home h1 {
   font-size: 2.5em;
   font-weight: 400;
-  line-height: 1.2;
+  line-height: 2;
 }
 .home h2 {
   font-size: 1.25em;    font-weight: bold;
@@ -28,6 +28,24 @@
 
 .home h4 {  font-size: 1.125em;   font-weight: bold; }
 .home .btn {    padding: 10px 15px;  }
+
+/* ==== containers */
+.home .container {
+  min-height: auto;
+  text-align: center;
+}
+.home .container-dark p.head {
+  font-size: 0.75em;
+  font-weight: 300;
+}
+.home .container-dark h1 {
+  font-weight: normal;
+  color: #22ddbc;
+}
+.home .container-dark h3 {
+  font-size: 1.125em;
+  color: #22ddbc;
+}
 
 /*==== itemlists*/
 .itemlist {
@@ -54,9 +72,52 @@
 
 
 /*==== home section*/
-.home .container-home {  padding-top: 150px;  text-align: center; }
-.container-home .box-centered { padding: 40px 0 80px; }
+.home .container-home {  padding-top: 150px;  }
+.container-home p {
+  font-size: 1.5em;
+}
+/* video bg */
+.bg-video {
+  position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    bottom: 0;
+    right: 0;
+}
+.bg-video:after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-bottom: -10%;
+  background: #000;
+  opacity: 0.7;
+}
+.bg-video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.container-home .box-centered {
+  width: 100%;
+  padding: 40px 0 80px;
+}
+
+.home .img-main-logo {      margin-bottom: 40px;  }
+p.countdown-head {
+  margin-top: 50px;
+  font-size: 16px;
+}
+button.btn-registernow {
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-size: 1.375em;
+}
 .countdown-timer {  padding: 20px 65px;  }
+  div.time-unit { display: inline-block;}
   span.time-unit {
     display: block;
     margin-bottom: 5px;
@@ -100,10 +161,12 @@
   .container-about .row-slim {  padding-bottom: 30px;  }
   .about-text {
     width: 60%;
-    padding-right: 30px;
+    padding: 100px 30px 0 0;
   }
   .about-text p {
+    text-align: left;
     font-size: 1.125em;
+    line-height: 1.5;
     color: #555555;
   }
   .img-app-preview {
@@ -161,7 +224,6 @@
 
   /*==== exclusive bonus, utility*/
   .home .container-center {
-    text-align: center;
     height: auto;
     min-height: auto;
     padding: 100px 0;
@@ -191,6 +253,9 @@
   }
 
   /*technology section*/
+  .home .container-technology h1 {
+    color: #22ddbc;
+  }
   .technology-itemlist {
     padding: 60px 0;
   }
@@ -208,6 +273,7 @@
     display: inline-block;
   }
   .technology-itemlist .item-lbl {
+    font-size: 1em;
     font-weight: bold;
     margin-bottom: 1em;
   }
@@ -226,29 +292,45 @@
     width: 60%;
     margin: 30px auto;
   }
+  .container-tokenoffering td, .container-tokenoffering p {    font-size: 1.1875em;  }
+
+
+  /* ==== container strategy */
+  .container-strategy .row-slim {    padding: 40px 10%;  }
+  .container-strategy .box-centered {      width: 60%;    padding: 30px 0; }
+  .container-strategy p {    font-size: 1.1875em;  }
+  .container-strategy table td, .container-strategy table th {
+    padding: 10px;
+    text-align: center;
+    font-size: 1.125em;
+    font-weight: bold;
+  }
+  .blue-white-table td, .blue-white-table th {
+    border-bottom: 4px solid #252528;
+  }
+  .blue-white-table th, .blue-white-table td.head {
+    border-right: 2px solid #252528;
+    background: #6ebde6;
+    color: #ffffff;
+  }
+  .blue-white-table th:empty {    background: transparent;  }
+  .blue-white-table td {
+    background: #ffffff;
+    color: #252528;
+  }
+
+  .blue-white-table td.right-bordered {    border-right: 2px solid #252528;   }
+
+
+  .blue-table {    border-collapse: separate; }
+  .blue-table td {    width: 50%; background: #5683ea;  color: #353434;  }
+  .blue-table td:first-child {    color: #ffffff;  }
 
 
   /*==== container linemaps*/
-  .home .container-linemaps    {
-    padding: 110px 0 40px;
-    text-align: center;
-  }
-  .home .container-linemaps .row-linemap {
-    padding: 40px 0;
-  }
-  .linemap { padding: 40px 0;}
-  .home .container-linemaps p.head {
-    font-size: 0.75em;
-    font-weight: 300;
-  }
-  .home .container-linemaps h1 {
-    font-weight: normal;
-    color: #22ddbc;
-  }
-  .home .container-linemaps h3 {
-    font-size: 1.125em;
-    color: #22ddbc;
-  }
+  .home .container-roadmap    {    padding: 110px 0 40px;  }
+  .home .row-linemap {    padding: 40px 10%;  }
+  /* .linemap { padding: 40px 0;} */
 
   .linemap text  {    font-family: Raleway;  }
 
@@ -259,8 +341,7 @@
 
   /*==== container-aboutus*/
   .home .container-aboutus    {
-    padding-bottom: 0;
-    text-align: center;
+    padding: 50px 0;
     color: #bf17a0;
   }
   .container-aboutus h2 {  color: #bf17a0;     }
@@ -313,6 +394,7 @@
       color: #686868;
       white-space: nowrap;
     }
+    .profile-soc {  text-align: center; }
 
 
     .profile-group:first-child .profile-img {  background-image: url(../../assets/images/execteam-1.jpg);   }
@@ -365,12 +447,11 @@
 
     /* ==== container social media */
     .home .container-social {
-      text-align: center;
       background: #363636;
       color: #ffffff;
     }
     .row-social .item-group {    width: 15%;    padding: 30px 0 20px;  }
-    .row-social .item-group .item-img {    padding-bottom: 50%;  }
+    .row-social .item-group .item-img {    padding-bottom: 45px;  }
     .row-social .item-group:first-child .item-img {  background-image: url(../../assets/images/social-1.png);   }
     .row-social .item-group:nth-child(2) .item-img {  background-image: url(../../assets/images/social-2.png);   }
     .row-social .item-group:nth-child(3) .item-img {  background-image: url(../../assets/images/social-3.png);   }
@@ -378,8 +459,7 @@
 
 
     /* container FAQ */
-    .container-faq    {      text-align: center;    }
-    .container-faq .row-slim  { padding: 0 20%; }
+    .container-faq .row-slim  { padding: 0 15%; }
     .container-faq h1 {
       font-size: 2.5em;
       color: #bf17a0;
@@ -436,6 +516,9 @@
 }
 .box-centered {  display: inline-block; }
 .box-centered > *:not(:last-child) {  margin-right: 10px; }
+.infographic {
+  padding: 40px 0;
+}
 
 /*==== images*/
 .img {
@@ -444,6 +527,7 @@
   background-position: center;
 }
     .img-main-logo {
-      background-image: url(../../assets/images/cryptaldash-white-logo.png);
-      padding-bottom: 13%;
+      background-image: url(../../assets/images/cryptaldash-logo.png);
+      padding-bottom: 15%;
+      background-size: contain;
     }
